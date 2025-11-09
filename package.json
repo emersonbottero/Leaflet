@@ -31,7 +31,9 @@
     "sinon": "^21.0.0",
     "ssri": "^13.0.0",
     "uglify-js": "^3.19.3",
-    "ui-event-simulator": "^2.0.0"
+    "ui-event-simulator": "^2.0.0",
+    "vitepress": "^2.0.0-alpha.12",
+    "vitepress-sidebar": "^1.33.0"
   },
   "type": "module",
   "exports": {
@@ -61,7 +63,10 @@
     "bundlemon": "bundlemon",
     "serve": "cd docs && bundle exec jekyll serve",
     "prepare": "husky",
-    "version": "node ./build/version.js && git add ./src/Leaflet.js"
+    "version": "node ./build/version.js && git add ./src/Leaflet.js",
+    "docs:dev": "vitepress dev docs-vite",
+    "docs:build": "vitepress build docs-vite",
+    "docs:preview": "vitepress preview docs-vite"
   },
   "repository": {
     "type": "git",
