@@ -21,7 +21,7 @@ export default defineConfig(withSidebar({
 		]
 	],
 	themeConfig: {
-		logo: '/docs/images/logo.png',
+		logo: 'logo.png',
 		srcDir: './docs-vite',
 		search: {
 			provider: 'local'
