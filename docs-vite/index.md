@@ -272,7 +272,8 @@ Check out the contribution guide for more information on getting involved with L
     .logo-foursquare,   
     .logo-ftimes,
     .logo-ign,
-    .logo-500px {
+    .logo-500px,
+    .logo-wpost {
       filter: invert(1)
     }
 
@@ -282,6 +283,10 @@ Check out the contribution guide for more information on getting involved with L
 
     .logo-ign {
       filter: invert(1) hue-rotate(185deg);
+    }
+
+    .logo-openstreetmap {
+      filter: invert(1) hue-rotate(162deg) brightness(3);
     }
   }
 </style>
