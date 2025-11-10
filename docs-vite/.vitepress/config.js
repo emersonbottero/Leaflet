@@ -25,9 +25,9 @@ export default defineConfig(withSidebar({
 		search: {
 			provider: 'local'
 		},
-		nav: [
-			{text: 'Announciment', link: '/_posts/'}
-		]
+		// nav: [
+		// 	{text: 'Announciment', link: '/_posts/'}
+		// ]
 	}
 },{
   documentRootPath: '/docs-vite',
