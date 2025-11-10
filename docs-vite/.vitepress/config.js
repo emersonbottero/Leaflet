@@ -1,6 +1,7 @@
 import {defineConfig} from 'vitepress';
+import { withSidebar } from 'vitepress-sidebar';
 
-export default defineConfig({
+export default defineConfig(withSidebar({
 	// site-level options
 	title: 'Leaflet',
 	description: 'Leaflet is the leading open-source JavaScript library for **building powerful interactive maps**',
@@ -21,9 +22,19 @@ export default defineConfig({
 	themeConfig: {
 		logo: '/docs/images/logo.png',
 		srcDir: './docs-vite',
+		search: {
+			provider: 'local'
+		},
 		nav: [
 			{text: 'Announciment', link: '/_posts/'}
-		],
-
+		]
 	}
-});
+},{
+  documentRootPath: '/docs-vite',
+  collapsed: false,
+  includeFolderIndexFiles: true,
+  includeRootIndexFile: true,
+  useFolderLinkFromIndexFile: true,
+  capitalizeFirst: true,
+}));
+

@@ -16,8 +16,9 @@ export default [
 	},
 	{
 		ignores: [
-			'dist/*.js',
+			'dist/',
 			'docs/docs/highlight',
+			'docs-vite',
 			'docs/examples/choropleth/us-states.js',
 			'docs/examples/geojson/sample-geojson.js',
 			'docs/examples/map-panes/eu-countries.js',

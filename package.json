@@ -12,6 +12,7 @@
     "eslint": "^9.39.0",
     "eslint-config-mourner": "^4.1.0",
     "eslint-plugin-import-x": "^4.16.1",
+    "globby": "^15.0.0",
     "http-server": "^14.1.1",
     "husky": "^9.1.7",
     "karma": "^6.4.4",
@@ -64,6 +65,7 @@
     "serve": "cd docs && bundle exec jekyll serve",
     "prepare": "husky",
     "version": "node ./build/version.js && git add ./src/Leaflet.js",
+    "docs:gen": "node scripts/jsdoc-to-md.js",
     "docs:dev": "vitepress dev docs-vite",
     "docs:build": "vitepress build docs-vite",
     "docs:preview": "vitepress preview docs-vite"
