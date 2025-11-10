@@ -46,7 +46,9 @@ jobs:
       - name: Install dependencies
         run: npm ci # or pnpm install / yarn install / bun install
       - name: Build with VitePress
-        run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
+        run: |
+          cat docs-vite/.vitepress/config.js # for debugging
+          npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
       - name: Deploy Documentation 📕
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
