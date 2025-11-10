@@ -32,10 +32,10 @@ export default defineConfig(withSidebar({
 	}
 },{
   documentRootPath: '/docs-vite',
-  collapsed: false,
+  collapsed: true,
   includeFolderIndexFiles: true,
   includeRootIndexFile: true,
-  useFolderLinkFromIndexFile: true,
+//   useFolderLinkFromIndexFile: true,
   capitalizeFirst: true,
 }));
 

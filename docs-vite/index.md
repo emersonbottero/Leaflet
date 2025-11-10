@@ -266,4 +266,22 @@ Check out the contribution guide for more information on getting involved with L
   .features h4 {
     margin: 0 0 0.3em;
   }
+
+  .dark {
+    .logo-github,
+    .logo-foursquare,   
+    .logo-ftimes,
+    .logo-ign,
+    .logo-500px {
+      filter: invert(1)
+    }
+
+    .logo-evernote{
+      filter: invert(1) hue-rotate(135deg)
+    }
+
+    .logo-ign {
+      filter: invert(1) hue-rotate(185deg);
+    }
+  }
 </style>
