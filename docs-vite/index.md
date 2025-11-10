@@ -141,7 +141,7 @@ Check out the contribution guide for more information on getting involved with L
     overflow: hidden;
     text-indent: -9999px;
     margin: 1em;
-    background: url(images/logos.png);
+    background: url(/Leaflet/images/logos.png);
     background-repeat: no-repeat;
     background-size: 100%;
     vertical-align: middle;
