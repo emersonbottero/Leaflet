@@ -4,8 +4,8 @@ import { withSidebar } from 'vitepress-sidebar';
 export default defineConfig(withSidebar({
 	// site-level options
 	title: 'Leaflet',
-	base: '/Leaflet/',
 	description: 'Leaflet is the leading open-source JavaScript library for **building powerful interactive maps**',
+	base: '/Leaflet/',
 	head: [
 		[
 			'link',
